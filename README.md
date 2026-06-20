@@ -151,43 +151,6 @@ Request body:
 
 For full API documentation, visit our [API Documentation](https://www.smolurlx.xyz/api-docs) page.
 
-## CLI Tool
-
-We provide an official command-line interface for creating shortened URLs directly from your terminal.
-
-### Installation
-
-```bash
-npm install -g smolurlx-cli
-```
-
-### Basic Usage
-
-```bash
-smolurlx --url "https://example.com/long-url" --api-key "YOUR_API_KEY"
-```
-
-### Features
-
-- Shorten URLs with a simple command
-- Support for custom slugs
-- Automatic clipboard copying
-- Colorized output
-- API key authentication
-
-### Options
-
-| Option | Description |
-|--------|-------------|
-| `--url, -u` | The URL to shorten (required) |
-| `--custom, -c` | Custom slug (optional) |
-| `--api-key, -k` | Your API key (can also be set via environment variable) |
-| `--endpoint, -e` | API endpoint (defaults to our official endpoint) |
-| `--copy, -cp` | Copy shortened URL to clipboard (defaults to true) |
-| `--help` | Show help |
-
-For more details on the CLI tool, visit our [API Documentation](https://www.smolurlx.xyz/api-docs) page.
-
 ## Deployment
 
 This application can be deployed on any platform that supports Next.js applications:

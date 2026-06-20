@@ -16,13 +16,12 @@ import {
   Link2Icon,
   BarChart3Icon,
   ExternalLinkIcon,
-  KeyIcon,
 } from "lucide-react";
 import { api } from "~/trpc/react";
 import { useState } from "react";
 import { AnalyticsDialog } from "../analytics";
 import { UrlManager } from "../url";
-import { ApiKeyManager } from "../api-keys/api-key-manager";
+
 import { FaGithub } from "react-icons/fa";
 import { Skeleton } from "~/components/ui/skeleton";
 
@@ -41,7 +40,6 @@ export function ProfileDropdown({
   const { data: urlStats, isLoading } = api.url.getUserStats.useQuery();
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [showUrlManager, setShowUrlManager] = useState(false);
-  const [showApiKeyManager, setShowApiKeyManager] = useState(false);
 
   return (
     <>
@@ -108,10 +106,7 @@ export function ProfileDropdown({
             <BarChart3Icon className="mr-2 h-4 w-4" />
             <span>Analytics</span>
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setShowApiKeyManager(true)}>
-            <KeyIcon className="mr-2 h-4 w-4" />
-            <span>API Keys</span>
-          </DropdownMenuItem>
+
           <DropdownMenuItem
             onClick={() => setShowUrlManager(true)}
             className="flex sm:hidden"
@@ -151,10 +146,6 @@ export function ProfileDropdown({
       <UrlManager open={showUrlManager} onOpenChange={setShowUrlManager} />
 
       <AnalyticsDialog open={showAnalytics} onOpenChange={setShowAnalytics} />
-      <ApiKeyManager
-        open={showApiKeyManager}
-        onOpenChange={setShowApiKeyManager}
-      />
     </>
   );
 }

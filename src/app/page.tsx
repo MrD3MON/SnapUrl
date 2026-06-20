@@ -128,12 +128,6 @@ export default async function Home() {
         <div className="text-muted-foreground flex flex-col items-center justify-center gap-2 px-4 text-center text-sm">
           <div className="flex items-center gap-4">
             <Link
-              href="/api-docs"
-              className="hover:text-primary transition-colors"
-            >
-              API Docs
-            </Link>
-            <Link
               href="https://github.com/MrD3MON/SnapUrl"
               className="hover:text-primary transition-colors"
             >
