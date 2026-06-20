@@ -37,7 +37,7 @@ export default async function Home() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/MrDXTR/urlshortener"
+              href="https://github.com/MrD3MON/SnapUrl"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:block"
@@ -134,7 +134,7 @@ export default async function Home() {
               API Docs
             </Link>
             <Link
-              href="https://github.com/MrDXTR/urlshortener"
+              href="https://github.com/MrD3MON/SnapUrl"
               className="hover:text-primary transition-colors"
             >
               GitHub
