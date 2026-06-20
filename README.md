@@ -1,6 +1,6 @@
 # SnapUrl
 
-![SnapUrl Logo](/public/Logo.png)
+![SnapUrl Logo](/public/logo.svg)
 
 A modern, fast, and secure URL shortening service built with the T3 Stack.
 
@@ -42,8 +42,8 @@ This project leverages the powerful T3 Stack:
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/MrDXTR/urlshortener.git
-   cd urlshortener
+   git clone https://github.com/MrD3MON/SnapUrl.git
+   cd SnapUrl
    ```
 
 2. Install dependencies
@@ -113,43 +113,6 @@ This project leverages the powerful T3 Stack:
 2. **Track your links**: Sign in to view analytics for your shortened URLs
 3. **Customize slugs**: Create personalized, memorable links
 4. **Share**: Copy and share your shortened URLs anywhere
-
-## API Integration
-
-Our service provides a RESTful API for developers to integrate URL shortening into their applications.
-
-### Base URL
-```
-https://www.smolurlx.xyz/api
-```
-
-### Authentication
-API requests require an API key that you can obtain from your account dashboard. Include the API key in the Authorization header:
-
-```
-Authorization: Bearer YOUR_API_KEY
-```
-
-### Rate Limits
-- **Authenticated**: 100 requests per 10 minutes
-- **Unauthenticated**: 10 requests per 10 minutes
-
-### Endpoints
-
-#### Create a Shortened URL
-```
-POST /api/shorten
-```
-
-Request body:
-```json
-{
-  "url": "https://example.com/very-long-url",
-  "customSlug": "my-custom-slug"  // Optional
-}
-```
-
-For full API documentation, visit our [API Documentation](https://www.smolurlx.xyz/api-docs) page.
 
 ## Deployment
 
