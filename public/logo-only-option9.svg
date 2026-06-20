@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradOpt9A" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF512F" />
+      <stop offset="100%" stop-color="#DD2476" />
+    </linearGradient>
+    <linearGradient id="gradOpt9B" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8C00" />
+      <stop offset="100%" stop-color="#FF0080" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(10, 10)">
+    <!-- Interlocking geometric shards forming a lightning/link logo -->
+    <!-- Left shard -->
+    <path d="M 40 15 L 75 15 L 55 50 L 80 50 L 35 95 L 48 58 L 25 58 Z" 
+          fill="url(#gradOpt9A)" />
+    <!-- Overlapping translucent glass shard for 3D depth -->
+    <path d="M 50 15 L 75 15 L 55 50 L 80 50 L 65 65 L 48 58 L 50 15 Z" 
+          fill="url(#gradOpt9B)" 
+          opacity="0.85" />
+    <!-- Decorative geometric accent line -->
+    <path d="M 35 95 L 48 58 L 58 68 Z" 
+          fill="#FFFFFF" 
+          opacity="0.3" />
+  </g>
+</svg>

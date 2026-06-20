@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradOpt8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    <filter id="glowOpt8" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer glowing path -->
+  <path d="M 35 85 C 15 85, 15 55, 35 55 C 55 55, 65 35, 85 35 C 105 35, 105 65, 85 65" 
+        fill="none" 
+        stroke="url(#gradOpt8)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        opacity="0.25"
+        filter="url(#glowOpt8)" />
+        
+  <!-- Main dynamic curve 'S' link -->
+  <path d="M 35 85 C 15 85, 15 55, 35 55 C 55 55, 65 35, 85 35 C 105 35, 105 65, 85 65" 
+        fill="none" 
+        stroke="url(#gradOpt8)" 
+        stroke-width="10" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+        
+  <!-- Glowing central overlap connector -->
+  <path d="M 45 55 C 55 55, 65 35, 75 35" 
+        fill="none" 
+        stroke="#00F2FE" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+</svg>

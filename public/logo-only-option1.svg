@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="snapGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0080" />
+      <stop offset="100%" stop-color="#7928CA" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <g transform="translate(5, 5)">
+    <!-- Outer Ring Link -->
+    <path d="M 45 35 C 45 20, 60 10, 75 10 C 90 10, 105 20, 105 35 C 105 45, 98 55, 90 62 L 75 75 L 68 68 L 81 55 C 87 50, 92 43, 92 35 C 92 25, 83 18, 75 18 C 67 18, 58 25, 58 35 C 58 45, 68 55, 75 60" fill="url(#snapGrad1)" />
+    
+    <!-- Lightning Bolt (The "Snap" / Speed) -->
+    <path d="M 50 110 L 72 65 L 52 65 L 75 10 L 53 55 L 73 55 Z" fill="url(#snapGrad1)" filter="url(#glow)" />
+    
+    <!-- Connecting link dots for motion -->
+    <circle cx="28" cy="70" r="4" fill="#FF0080" opacity="0.6" />
+    <circle cx="18" cy="85" r="3" fill="#7928CA" opacity="0.4" />
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100%">
+  <defs>
+    <linearGradient id="opt5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00CFFD" />
+      <stop offset="100%" stop-color="#0070F3" />
+    </linearGradient>
+  </defs>
+  <!-- Cyberpunk Speed Ring -->
+  <circle cx="50" cy="50" r="36" stroke="url(#opt5Grad)" stroke-width="6" stroke-dasharray="140 30" stroke-linecap="round" fill="none" transform="rotate(-45 50 50)" />
+  <circle cx="50" cy="50" r="26" stroke="#00CFFD" stroke-width="4" stroke-dasharray="80 40" stroke-linecap="round" fill="none" opacity="0.6" transform="rotate(45 50 50)" />
+  
+  <!-- Center lightning / speed element -->
+  <path d="M 52 32 L 38 52 L 48 52 L 44 68 L 60 46 L 50 46 Z" fill="url(#opt5Grad)" />
+</svg>
