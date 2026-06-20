@@ -30,7 +30,7 @@ export default async function Home() {
 
       {/* Header */}
       <header className="bg-background/80 border-border fixed top-0 z-50 w-full border-b backdrop-blur">
-        <div className="flex h-16 items-center justify-between px-4">
+        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <Image src="/logo.svg" alt="SnapUrl Logo" width={32} height={32} className="h-8 w-8" priority />
             <h1 className="text-2xl font-bold">SnapUrl</h1>

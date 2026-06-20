@@ -1,6 +1,6 @@
 # SnapUrl
 
-![SnapUrl Logo](/public/logo.svg)
+![SnapUrl ss](/public/demo.png)
 
 A modern, fast, and secure URL shortening service built with the T3 Stack.
 
